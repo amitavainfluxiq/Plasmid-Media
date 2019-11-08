@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1620px) {
+
+    .header_body .mat-card-content{ width: 1400px; margin: 0 auto;}
+
+    .home_banner_wrapper{ width: 1400px; margin: 0 auto;}
+
+    .home_block2{ width: 1400px!important;}
+
+    .home_block3_wrapper{ width: 1400px!important;}
+
+    .home_block4_wrapper{ width: 1400px!important;}
+    .home_block6_wrapper{ width: 1400px!important;}
+
+    .home_block6_wrapper button { margin: 30px 0 0 0;}
+
+}
+
+
+@media only screen and (max-width: 1420px) {
+
+    .header_body .mat-card-content{ width: 1200px; margin: 0 auto;}
+    .home_banner_wrapper{ width: 1200px; margin: 0 auto;}
+    .home_block2{ width: 1190px!important;}
+    .home_block3_wrapper{ width: 1190px!important;}
+
+    .home_block4_wrapper{ width: 1190px!important;}
+    .home_block6_wrapper{ width: 1190px!important;}
+
+    .home_block6_wrapper h2{ width: 830px;}
+
+    .home_block6_wrapper button{ width: 660px;}
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .bannr_text_con {
+        width: 480px;
+    }
+    .bannr_text_wrapper label {
+        font-size: 35px;}
+
+    .bannr_text_wrapper p {font-size: 20px;
+        line-height: 24px; width: 100%;}
+}
+
+
+@media only screen and (max-width: 1220px) {
+
+    .header_body .mat-card-content{ width: 1100px; margin: 0 auto;}
+
+    .home_banner_wrapper{ width: 1100px; margin: 0 auto;}
+
+    .home_block5_wrapper{  width: 1190px!important;  }
+    .home_block6_wrapper h2 {
+        width: 820px;
+        font-size: 28px;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+
+    .header_body .mat-card-content{ width: 90%; margin: 0 auto; padding-top: 15px!important;}
+
+    .header_body .mat-card-content .headerlogo{ width: auto; float:none; margin: 0px auto!important;}
+
+    .header_body .mat-card-content .headerlogo img{ width: auto; display: block; margin: 0 auto; max-width: 100%;}
+
+    .header_body .mat-card-content .headerinfo{ float: none; width: 100%; text-align: center; padding: 15px 0!important;}
+
+
+    .home_banner_wrapper{ width: 100%; margin: 0 auto;}
+
+
+    .home_banner{ background-position: left top!important; background-size: 132%!important; padding-top: 44%!important; background-color: #21242b!important; height: auto;}
+
+    .bannr_text_con{ width: 100%;   float: none;}
+
+    .bannr_text_wrapper{ height:auto; display: block;  text-align: center; padding: 10px 15px; width: auto; padding-top: 20px!important;}
+
+    .top_formblock{ width:auto; float: none; margin: 15px 0 0 0!important;}
+    .bannr_text_wrapper button{ float: none;}
+
+
+    .home_block2{ width: 90%!important;}
+
+    .home_block2 mat-card-content{ width: 100%; float: none; text-align: center;}
+
+    .home_block2 mat-card-content:nth-of-type(2){ margin: 30px 0;}
+
+
+    .home_block3_wrapper{ width: 90%!important;}
+
+
+
+    .home_block3 .mat-card-content{ width: 48%; margin: 12px 1%;  }
+
+    .home_block3 mat-card-content:nth-of-type(2){ margin: 12px 1%;}
+    .home_block3 mat-card-content:nth-of-type(5){margin:12px 1%;}
+
+    .home_block3 mat-card-content p{ height: 45px;}
+
+
+    .home_block4_wrapper{ width: 90%!important;}
+
+
+    .home_block4  ul li{     width: 47.6%;}
+
+    .home_block5_wrapper{  width:90%!important;  }
+
+    .home_block5  ul li{   width: 47.2%;}
+
+    .home_block6_wrapper{ width: 90%!important; }
+    .home_block6_wrapper h2{ width: 100%; text-align: center;}
+
+    .home_block6{  padding:42% 0 30px 0!important; background-size:230%!important; height:auto!important; background-color: #041018!important; }
+
+    .home_block6_wrapper button{ margin-left: auto; margin-right: auto; margin-top: 15px;}
+
+    .top_formblock h2{ text-align: center;}
+}
+
+@media only screen and (max-width: 991px) {
+  /*  .privacy_wrapper {
+        width:90%;
+    }*/
+}
+@media only screen and (max-width: 880px) {
+    .home_block4  ul li{width: 47.6%;}
+    .home_block4  ul li:nth-of-type(4){ margin-left: 0.2%;}
+
+    .home_block4  ul li:nth-of-type(5){ margin-left: 26%;}
+}
+
+@media only screen and (max-width: 740px) {
+
+    .home_block6_wrapper button{ width: auto; height: auto; line-height: 45px; padding: 18px; padding-top: 25px; font-size: 40px;}
+}
+
+@media only screen and (max-width: 667px) {
+.home_banner {
+    background-position: 55% top!important;
+    background-size: 240%!important;
+    padding-top: 78%!important;
+    background-color: #21242b!important;
+    height: auto;
+}
+
+    .home_block3 .mat-card-content{ width: 98%; margin: 12px 1%; text-align: center;  }
+
+    .home_block4  ul{ display: block;}
+    .home_block4  ul li{   width: auto;  margin: 5px 0; text-align: center; padding: 12px;}
+
+    .home_block4 ul li label{ height: auto;}
+
+    .home_block5  ul{display: block;}
+    .home_block5  ul li{   width: auto; display: block; margin: 5px 0;}
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .top_formblock mat-form-field{ width: 99%; float: none!important;}
+}
+
+@media only screen and (max-width: 380px) {
+    .topsubbtn{  width: 100%;}
+}

@@ -1,0 +1,386 @@
+<app-header></app-header>
+
+<mat-card class="home_banner">
+
+  <mat-card-content class="home_banner_wrapper">
+
+    <span class="bannr_text_con">
+
+      <span class="bannr_text_wrapper">
+
+        <h2>2019</h2>
+        <label>IS THE YEAR FOR SOLAR</label>
+
+        <p>For the year of 2019, the government
+has approved a 30% tax credit for going solar.
+On top of that, this year allows a 100%
+bonus depreciation!</p>
+
+
+<button (click)="scroll()">Get Started Now</button>
+           <span class="clear"></span>
+
+    </span>
+
+    </span>
+
+    <mat-card-subtitle class="top_formblock">
+
+      <h2>Request a</h2>
+      <h3>FREE CONSULTATION</h3>
+      <form [formGroup]="myform" autocomplete="off" name="myform" (ngSubmit)="doSubmit()">
+
+        <mat-form-field>
+          <input matInput placeholder="First Name" [formControl]="myform.controls['fname']"  (blur)="inputUntouch(myform,'fname')">
+            <mat-error *ngIf="myform.controls['fname'].touched && !myform.controls['fname'].valid
+           && myform.controls['fname'].errors.required">
+                First Name field can not be blank</mat-error>
+        </mat-form-field>
+
+
+      <mat-form-field>
+        <input matInput placeholder="Last Name" [formControl]="myform.controls['lname']"  (blur)="inputUntouch(myform,'lname')">
+          <mat-error *ngIf="myform.controls['lname'].touched && !myform.controls['lname'].valid
+           && myform.controls['lname'].errors.required">
+              Last Name field can not be blank</mat-error>
+      </mat-form-field>
+
+
+        <mat-form-field>
+          <input matInput placeholder="Street Address" [formControl]="myform.controls['saddress']"  (blur)="inputUntouch(myform,'saddress')">
+            <mat-error *ngIf="myform.controls['saddress'].touched && !myform.controls['saddress'].valid
+           && myform.controls['saddress'].errors.required">
+                Street Address field can not be blank</mat-error>
+        </mat-form-field>
+
+          <mat-form-field>
+              <input matInput placeholder="State" [formControl]="myform.controls['state']"  (blur)="inputUntouch(myform,'state')">
+              <mat-error *ngIf="myform.controls['state'].touched && !myform.controls['state'].valid
+           && myform.controls['state'].errors.required">
+                  State field can not be blank</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+              <input matInput placeholder="City" [formControl]="myform.controls['city']"  (blur)="inputUntouch(myform,'city')">
+              <mat-error *ngIf="myform.controls['city'].touched && !myform.controls['city'].valid
+           && myform.controls['city'].errors.required">
+                  City field can not be blank</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+              <input matInput placeholder="Zip" [formControl]="myform.controls['zip']"  (blur)="inputUntouch(myform,'zip')">
+              <mat-error *ngIf="myform.controls['zip'].touched && !myform.controls['zip'].valid
+           && myform.controls['zip'].errors.required">
+                  Zip field can not be blank</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+              <input matInput placeholder="Home Phone" [formControl]="myform.controls['homephone']"  (blur)="inputUntouch(myform,'homephone')">
+               <mat-error *ngIf="myform.controls['homephone'].touched && !myform.controls['homephone'].valid
+           && myform.controls['homephone'].errors.required">
+              Home Phone field can not be blank</mat-error>
+          </mat-form-field>
+
+
+          <mat-form-field>
+              <input matInput placeholder="Work Phone" [formControl]="myform.controls['workphone']"  (blur)="inputUntouch(myform,'workphone')">
+              <mat-error *ngIf="myform.controls['workphone'].touched && !myform.controls['workphone'].valid
+           && myform.controls['workphone'].errors.required">
+                  Work Phone field can not be blank</mat-error>
+          </mat-form-field>
+
+
+          <mat-form-field>
+              <input matInput placeholder="Email" [formControl]="myform.controls['email']"  (blur)="inputUntouch(myform,'email')">
+              <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
+           && myform.controls['email'].errors.required">
+                  Email field can not be blank</mat-error>
+          </mat-form-field>
+
+           <mat-form-field>
+              <select matNativeControl>
+                  <option value="homeowner"> Homeowner Yes / No</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+
+              </select>
+            </mat-form-field>
+
+
+          <mat-form-field>
+              <input matInput placeholder="Electricity Provider" [formControl]="myform.controls['electricityprovider']"  (blur)="inputUntouch(myform,'electricityprovider')">
+              <mat-error *ngIf="myform.controls['electricityprovider'].touched && !myform.controls['electricityprovider'].valid
+           && myform.controls['electricityprovider'].errors.required">
+                  Electricity Provider field can not be blank</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+              <select matNativeControl>
+                  <option value="shade">Shade</option>
+                  <option value="noshade">No Shade</option>
+
+              </select>
+          </mat-form-field>
+          <span class="clear"></span>
+          <mat-form-field class="textareafield">
+
+              <textarea matInput placeholder="Monthly Utility Bill" [formControl]="myform.controls['utility']"  (blur)="inputUntouch(myform,'utility')"></textarea>
+              <mat-error *ngIf="myform.controls['utility'].touched && !myform.controls['utility'].valid
+           && myform.controls['utility'].errors.required">
+                  Monthly Utility Bill field can not be blank</mat-error>
+          </mat-form-field>
+
+          <button mat-flat-button type="submit" class="topsubbtn" ><span>Submit </span></button>
+
+
+
+      </form>
+
+    </mat-card-subtitle>
+
+
+
+    <span class="clear"></span>
+
+
+  </mat-card-content>
+
+
+</mat-card>
+
+
+<mat-card class="home_block2">
+    <mat-card-content>
+
+        <img src="../../assets/images/home_block2_img1.png" alt="#">
+        <h2>Lower Your Energy Cost</h2>
+        <p>With no upfront costs for service or installation, you can start saving from day one. Solar panels are 70% cheaper today than they were years ago, which means most homeowners can now afford to switch to solar. Additionally, solar energy can significantly and permanently reduce your electricity costs.</p>
+
+    </mat-card-content>
+
+    <mat-card-content>
+
+        <img src="../../assets/images/home_block2_img2.png" alt="#">
+        <h2>Why Go Solar ?</h2>
+        <p>Solar panels are an economical way for you to reduce your
+            electricity bill, increase property value, and help the environment. Instead of paying your electric company, solar panels allow you to save thousands year after year! Find out now if your home is
+            eligible.</p>
+
+    </mat-card-content>
+
+    <mat-card-content>
+
+        <img src="../../assets/images/home_block2_img3.png" alt="#">
+        <h2>Rebates and Incentives</h2>
+        <p>In an effort to get more people to switch to clean solar energy, the Federal and State Governments are offering big incentives to
+            homeowners who live in specific zip codes. Thousands of dollars in rebates and incentives are available to cover up to 100% of the costs associated with a new solar panel installation.
+            Find out now if you qualify!</p>
+
+    </mat-card-content>
+
+    <span class="clear"></span>
+
+    <button (click)="scroll()">Get Started Now</button>
+
+
+</mat-card>
+
+<mat-card class="home_block3">
+<mat-card class="home_block3_wrapper">
+
+    <h2>How Solar Works</h2>
+
+    <mat-card-content>
+        <span class="home_block3img"><img src="../../assets/images/home_block3_img1.jpg" alt="#"></span>
+        <label>Solar Panels</label>
+        <p>Solar panels absorb and
+            convert sunlight (DC) electricity that flows to an inverter.</p>
+
+    </mat-card-content>
+
+
+    <mat-card-content>
+        <span class="home_block3img"><img src="../../assets/images/home_block3_img2.jpg" alt="#"></span>
+        <label>Inverters</label>
+        <p>Inverters convert the direct current (DC) power into alternating (AC).</p>
+
+    </mat-card-content>
+
+
+    <mat-card-content>
+        <span class="home_block3img"><img src="../../assets/images/home_block3_img3.jpg" alt="#"></span>
+        <label>Switch Board</label>
+        <p>The AC electricity is then sent to the breaker box and harnessed to power your home or business.</p>
+
+    </mat-card-content>
+
+
+    <mat-card-content>
+        <span class="home_block3img"><img src="../../assets/images/home_block3_img4.jpg" alt="#"></span>
+        <label>Utility Meter</label>
+        <p>Any excess energy created by your solar power system will flow into the utility grid through the meter.</p>
+
+    </mat-card-content>
+
+
+    <mat-card-content>
+        <span class="home_block3img"><img src="../../assets/images/home_block3_img5.jpg" alt="#"></span>
+        <label>The Grid</label>
+        <p>Interconnected network providing electricity to your property
+            when demand exceeds solar production.</p>
+
+    </mat-card-content>
+
+    <mat-card-content>
+        <span class="home_block3img"><img src="../../assets/images/home_block3_img6.jpg" alt="#"></span>
+        <label>Monitoring</label>
+        <p>A tracking system that allows 24/7 monitoring of your home or business's energy production.</p>
+
+    </mat-card-content>
+
+    <span class="clear"></span>
+
+    <button (click)="scroll()">Get Started Now</button>
+</mat-card>
+</mat-card>
+
+
+<mat-card class="home_block5">
+    <mat-card class="home_block5_wrapper">
+    <h2>4 Easy Steps To Going Solar</h2>
+
+        <ul>
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block5_img1.png" alt="#"></span>
+                <label>Speak To A Solar<br/>
+                    Consultant</label>
+
+            </li>
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block5_img2.png" alt="#"></span>
+                <label>We Design Your<br/>
+                    Solar Panel System</label>
+
+            </li>
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block5_img3.png" alt="#"></span>
+                <label>We Schedule<br/>
+                    Your Installation</label>
+
+            </li>
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block5_img4.png" alt="#"></span>
+                <label>You Start Saving<br/>
+                    On Your Electricity Bill</label>
+
+            </li>
+
+        </ul>
+
+        <button (click)="scroll()">Get Started Now</button>
+
+    </mat-card>
+
+</mat-card>
+
+<mat-card class="home_block4">
+    <mat-card class="home_block4_wrapper">
+
+        <h2>Significantly reduce
+            or eliminate your
+            monthly electric bill.</h2>
+
+        <h3>Everyone needs electricity to power their homes. The main reason homeowners are converting to solar power/solar panels is to significantly reduce or even eliminate their highest monthly expenses, the electric bill. Switching to solar now can provide dramatic and permanent savings, instantly. As the cost of electricity continues to rise, you can feel confident in knowing that you will be saving money, regardless of the price that utility companies charge. Simply fill out our form and see how much you can save.</h3>
+
+        <ul>
+
+
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block4_img2.jpg" alt="#"></span>
+                <label>How much does
+                    solar energy cost?</label>
+
+                <p>Solar costs less than traditional electricity in many areas, whether you choose to purchase the system or pay as you go. There are a range of financing options, which makes going solar simple and affordable. Fill out our form and get a free, no cost quote by the top professionals in your area.
+                </p>
+
+            </li>
+
+
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block4_img3.jpg" alt="#"></span>
+                <label>How does solar
+                    power work?
+                </label>
+
+                <p>Solar panels capture the sun's energy, and then channel it through discreetly placed wires to an
+                    inverter, where it's converted to electricity to power your home. When your solar power system produces more power than you need, it feeds the power back into the electricity grid. It's that simple.
+
+                </p>
+
+            </li>
+
+
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block4_img4.jpg" alt="#"></span>
+                <label>Rebates and local
+                    government
+                    incentives.
+                </label>
+
+                <p>Government agencies and utility companies offer tax credits, rebates or other incentives as a way to promote the benefits of solar energy for both residential and commercial customers. Take advantage of these savings and incentives before it's too late or they disappear. You may be
+                    eligible. Find Out If You Qualify.
+
+                </p>
+
+            </li>
+
+
+            <li>
+                <span class="home_block4img"><img src="../../assets/images/home_block4_img5.jpg" alt="#"></span>
+                <label>How will solar panels
+                    look on my roof?
+
+                </label>
+
+                <p>Great. Today's solar panels are modern and have a low-profile design that integrates stylishly into your roof. It's a timeless look.
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+                </p>
+
+            </li>
+
+
+
+
+
+
+
+            <span class="clear"></span>
+
+        </ul>
+
+
+
+
+
+        <button (click)="scroll()">Get Started Now</button>
+
+
+    </mat-card>
+
+</mat-card>
+
+<mat-card class="home_block6">
+    <mat-card class="home_block6_wrapper">
+
+        <h2>The solar boom is going on right now. Don't miss out! Whether your decision is personal, economical or environmental, going solar is a smart choice! Simply fill out our form for a </h2>
+
+        <button (click)="scroll()">FREE Consultation Today!</button>
+
+    </mat-card>
+
+</mat-card>
+
+<app-footer></app-footer>
