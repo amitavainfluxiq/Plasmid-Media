@@ -297,11 +297,11 @@ input.mat-input-element {
 
 
 /*.cdk-global-scrollblock{ overflow: inherit!important;}*/
-.mat-dialog-container{    padding: 0!important; box-shadow: none!important; margin: 25px auto;      }
+ .mat-dialog-container{    padding: 0!important; box-shadow: none!important; margin: 25px auto;      }
 
 .privacy_wrapper{ padding: 15px 0;}
 
-.cdk-global-scrollblock{ position: absolute!important; top: 0!important; /*overflow: auto!important; top:0px!important;*/}
+.cdk-global-scrollblock{ position: absolute!important; top: 0!important; }
 
 .cdk-overlay-container {
     position: absolute!important;
@@ -310,7 +310,7 @@ input.mat-input-element {
 
 .cdk-overlay-dark-backdrop {
     position: fixed!important;
-}
+} 
 
 
 /*----------------------------------------------------------------------------------*/
@@ -359,3 +359,22 @@ input.mat-input-element {
     min-width: inherit!important;
     line-height: 30px!important;
 }
+
+
+
+.modalmainwrapper {
+    border: solid 5px #fbb51f!important; box-shadow: none!important;
+    padding: 30px!important;
+    font-size: 26px!important;
+    color: #333!important;
+    font-family: 'HelveticaBold'!important;
+    font-weight: normal!important;}
+
+    .modalmainwrapper  .mat-card-subtitle{ font-size: 26px!important;
+        color: #333!important;   font-family: 'HelveticaBold'!important; text-align: center; line-height:30px;}
+
+
+        .selectcontainbox .mat-form-field-flex{ padding-top:7px; padding-bottom:7px;  position: relative;}
+
+        .selectcontainbox .labelclass{ position: absolute; color: #000!important;}
+

@@ -54,18 +54,25 @@ bonus depreciation!</p>
         </mat-form-field>
 
           <mat-form-field>
-              <input matInput placeholder="State" [formControl]="myform.controls['state']"  (blur)="inputUntouch(myform,'state')">
-              <mat-error *ngIf="myform.controls['state'].touched && !myform.controls['state'].valid
-           && myform.controls['state'].errors.required">
-                  State field can not be blank</mat-error>
-          </mat-form-field>
-
+            <select matNativeControl [formControl]="myform.controls['state']"  (blur)="inputUntouch(myform,'state')">
+                <option value="">State</option>
+                <option *ngFor="let statename of stateList" [value]="statename.abbreviation">{{statename.name}}</option>
+              </select>
+            <mat-error
+                    *ngIf="myform.controls['state'].touched && myform.controls['state'].errors">
+                State field can not be blank</mat-error>
+        </mat-form-field>
+        
           <mat-form-field>
-              <input matInput placeholder="City" [formControl]="myform.controls['city']"  (blur)="inputUntouch(myform,'city')">
-              <mat-error *ngIf="myform.controls['city'].touched && !myform.controls['city'].valid
-           && myform.controls['city'].errors.required">
-                  City field can not be blank</mat-error>
-          </mat-form-field>
+                <select matNativeControl [formControl]="myform.controls['city']" (blur)="inputUntouch(myform,'city')">
+                <option value="">City</option>
+                <option *ngFor="let cityname of cityList" [value]="cityname.city">{{cityname.city}}</option>
+                </select>
+            <mat-error
+                    *ngIf="myform.controls['city'].touched && myform.controls['city'].errors">
+                City field can not be blank</mat-error>
+        </mat-form-field>
+
 
           <mat-form-field>
               <input matInput placeholder="Zip" [formControl]="myform.controls['zip']"  (blur)="inputUntouch(myform,'zip')">
@@ -95,18 +102,21 @@ bonus depreciation!</p>
               <mat-error *ngIf="myform.controls['email'].touched && !myform.controls['email'].valid
            && myform.controls['email'].errors.required">
                   Email field can not be blank</mat-error>
+                <mat-error *ngIf="!myform.controls['email'].valid && myform.controls['email'].errors.email">Email is
+                        not valid</mat-error>
           </mat-form-field>
 
            <mat-form-field>
-              <select matNativeControl>
-                  <option value="homeowner"> Homeowner Yes / No</option>
+              <select matNativeControl [formControl]="myform.controls['homewoner']" (blur)="inputUntouch(myform,'homewoner')">
+                  <option value=""> Homeowner Yes / No</option>
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
-
               </select>
+              <mat-error
+                   *ngIf="myform.controls['homewoner'].touched && myform.controls['homewoner'].errors">
+                   Homewoner field can not be blank</mat-error>
             </mat-form-field>
-
-
+            
           <mat-form-field>
               <input matInput placeholder="Electricity Provider" [formControl]="myform.controls['electricityprovider']"  (blur)="inputUntouch(myform,'electricityprovider')">
               <mat-error *ngIf="myform.controls['electricityprovider'].touched && !myform.controls['electricityprovider'].valid
@@ -115,12 +125,16 @@ bonus depreciation!</p>
           </mat-form-field>
 
           <mat-form-field>
-              <select matNativeControl>
-                  <option value="shade">Shade</option>
-                  <option value="noshade">No Shade</option>
-
+              <select matNativeControl [formControl]="myform.controls['shade']"  (blur)="inputUntouch(myform,'shade')">
+                <option value="">Shade / No shade</option>
+                <option value="shade">Shade</option>
+                <option value="noshade">No Shade</option>
               </select>
+              <mat-error
+                   *ngIf="myform.controls['shade'].touched && myform.controls['shade'].errors">
+                   Homewoner field can not be blank</mat-error>
           </mat-form-field>
+
           <span class="clear"></span>
           <mat-form-field class="textareafield">
 

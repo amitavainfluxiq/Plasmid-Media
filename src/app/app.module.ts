@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MetaModule } from '@ngx-meta/core';
 
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent,SuccessDialogComponent } from './home/home.component';
 
 
 import {DemoMaterialModule} from '../app/material-module';
@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FooterComponent, PrivacyModal } from './footer/footer.component';
 
-
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,9 @@ import { FooterComponent, PrivacyModal } from './footer/footer.component';
 
     FooterComponent,
 
-    PrivacyModal
+    PrivacyModal,
+
+    SuccessDialogComponent
   ],
   imports: [
 
@@ -46,8 +48,8 @@ import { FooterComponent, PrivacyModal } from './footer/footer.component';
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule
   ],
 
-  entryComponents: [PrivacyModal],
-  providers: [],
+  entryComponents: [PrivacyModal,SuccessDialogComponent],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
