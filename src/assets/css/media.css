@@ -28,8 +28,11 @@
 
     .home_block6_wrapper h2{ width: 830px;}
 
-    .home_block6_wrapper button{ width: 660px;}
-}
+    .home_block6_wrapper button{ width: 740px;}
+
+    .home_block6_wrapper h2 { line-height: 32px;}
+
+    }
 
 
 @media only screen and (max-width: 1300px) {
@@ -53,12 +56,16 @@
     .home_block5_wrapper{  width: 1190px!important;  }
     .home_block6_wrapper h2 {
         width: 820px;
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
 
 @media only screen and (max-width: 1199px) {
+
+    .home_block4   h3{ width: 100%;}
+
+    .home_block3 h4 { display: block; width: 100%;}
 
     .header_body .mat-card-content{ width: 90%; margin: 0 auto; padding-top: 15px!important;}
 
@@ -79,7 +86,7 @@
     .bannr_text_wrapper{ height:auto; display: block;  text-align: center; padding: 10px 15px; width: auto; padding-top: 20px!important;}
 
     .top_formblock{ width:auto; float: none; margin: 15px 0 0 0!important;}
-    .bannr_text_wrapper button{ float: none;}
+    .bannr_text_wrapper button{ float: none; margin-top: 5px;}
 
 
     .home_block2{ width: 90%!important;}
@@ -98,7 +105,7 @@
     .home_block3 mat-card-content:nth-of-type(2){ margin: 12px 1%;}
     .home_block3 mat-card-content:nth-of-type(5){margin:12px 1%;}
 
-    .home_block3 mat-card-content p{ height: 45px;}
+    .home_block3 mat-card-content p{ height: 65px;}
 
 
     .home_block4_wrapper{ width: 90%!important;}
@@ -121,6 +128,8 @@
 }
 
 @media only screen and (max-width: 991px) {
+
+    .home_block3 mat-card-content p{ height: 85px;}
   /*  .privacy_wrapper {
         width:90%;
     }*/
@@ -155,6 +164,9 @@
 
     .home_block5  ul{display: block;}
     .home_block5  ul li{   width: auto; display: block; margin: 5px 0;}
+
+    .home_block6{  padding:70% 0 30px 0!important; background-size:370%!important;  }
+    .home_block3 mat-card-content p{ height: auto;}
 }
 
 
@@ -165,4 +177,46 @@
 
 @media only screen and (max-width: 380px) {
     .topsubbtn{  width: 100%;}
+
+    .bannr_text_wrapper button {
+        float: none;
+        margin-top: 5px;
+        height: auto;
+        line-height: 30px;
+        padding: 10px 10px 6px 10px;
+    }
+
+    .home_block2 button{
+        float: none;
+        margin-top: 5px;
+        height: auto;
+        line-height: 30px;
+        padding: 10px 10px 6px 10px; width: auto;
+    }
+
+    .home_block3 button{
+        float: none;
+        margin-top: 5px;
+        height: auto;
+        line-height: 30px;
+        padding: 10px 10px 6px 10px; width: auto;
+    }
+
+    .home_block4 button{
+        float: none;
+        margin-top: 5px;
+        height: auto;
+        line-height: 30px;
+        padding: 10px 10px 6px 10px; width: auto;
+    }
+
+    .home_block5 button{
+        float: none;
+        margin-top: 5px;
+        height: auto;
+        line-height: 30px;
+        padding: 10px 10px 6px 10px; width: auto;
+    }
+
+    .home_block5 ul li{ padding-left: 15px; padding-right: 15px;}
 }
